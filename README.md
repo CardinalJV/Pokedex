@@ -7,54 +7,54 @@
 
 # Pokedex
 
-Pokedex est une application iOS native qui permet aux utilisateurs de consulter et d'explorer des données sur les Pokémon. L'application suit l'architecture MVVM (Model-View-ViewModel) et récupère les données depuis un package externe. L'interface est conçue avec SwiftUI, offrant une expérience utilisateur fluide et réactive avec des animations améliorant l'expérience utilisateur.
+Pokedex is a native iOS application that allows users to view and explore data about Pokémon. The application follows the MVVM (Model-View-ViewModel) architecture and retrieves data from an external package. The interface is designed with SwiftUI, providing a smooth and responsive user experience with animations that enhance the user experience.
 
 ## ScreenCast
 
 https://github.com/user-attachments/assets/511b9fdd-3bf1-4b6b-8411-65d43ab7e59b
 
-## Fonctionnalités principales
+## Main features
 
-- Affichage des Pokémon :
+- Displaying Pokemon :
   
-Les Pokémon sont récupérés via une API externe.
-Chaque Pokémon est présenté avec des détails comme son type, ses statistiques, et son image dans la vue PokemonView.swift.
-Une liste interactive permet de naviguer parmi les Pokémon.
+The Pokemon are retrieved via an external API.
+Each Pokemon is displayed with details such as its type, stats, and image in the PokemonView.swift view.
+An interactive list allows you to browse through the Pokemon.
 
-- Requêtes asynchrones :
+- Asynchronous requests :
   
-Utilisation de async/await pour gérer les appels réseau.
-Les données des Pokémon sont récupérées et traitées via le PokemonViewModel.swift, qui gère la logique de récupération et de traitement des informations.
+Using async/await to handle network calls.
+Pokémon data is retrieved and processed via PokemonViewModel.swift, which manages the logic for retrieving and processing the information.
 
-- Gestion des favoris avec SwiftData :
+- Managing favorites with SwiftData :
   
-Les utilisateurs peuvent enregistrer leurs pokémons favoris grace SwiftData.
+Users can save their favorite Pokémon using SwiftData.
 
-- Architecture MVVM :
+- MVVM Architecture:
   
-Le projet est structuré selon l'architecture MVVM pour une séparation claire entre la logique d'affichage (Vue) et la gestion des données (Modèle et ViewModel).
-Le model est récupéré depuis un package externe, où les données des Pokémon sont modélisées.
-La logique métier et la récupération des données sont centralisées dans PokemonViewModel.swift.
+The project is structured according to the MVVM architecture for a clear separation between display logic (View) and data management (Model and ViewModel).
+The model is retrieved from an external package, where the Pokémon data is modeled.
+The business logic and data retrieval are centralized in PokemonViewModel.swift.
 
-- Interface SwiftUI :
+- SwiftUI interface :
   
-L'interface est entièrement construite en SwiftUI.
-Utilisation de @State et @Observable pour gérer les états et les données dans les différentes vues.
-Les composants réutilisables, comme les cartes de Pokémon, permettent une navigation fluide et un affichage dynamique.
+The interface is built entirely in SwiftUI.
+@State and @Observable are used to manage state and data in the different views.
+Reusable components, such as Pokémon cards, enable smooth navigation and dynamic display.
 
-## Détails techniques
+## Technical detail
 
-- Langage : Swift
-- Frameworks : SwiftUI / SwiftData
-- Architecture : MVVM (Model-View-ViewModel)
-- Récupération de données : Utilisation d'un package externe
-- Version iOS supportée : iOS 14 et plus
+- Language: Swift
+- Frameworks: SwiftUI / SwiftData
+- Architecture: MVVM (Model-View-ViewModel)
+- Data retrieval: Using an external package
+- Supported iOS version: iOS 14 and above
 
 ## Installation
 
-Clonez le projet depuis le dépôt GitHub, puis ouvrez-le dans Xcode. Assurez-vous que vous utilisez la dernière version de Xcode compatible avec Swift 5, SwiftUI et SwiftData pour éviter tout problème de compatibilité.
+Clone the project from the GitHub repository, then open it in Xcode. Make sure you're using the latest version of Xcode that's compatible with Swift 5, SwiftUI, and SwiftData to avoid any compatibility issues.
 
-## Crédits
+## Credits
 
-Toutes les données concernant les pokémons proviennent de l'API Tyradexkit.<br/>
+All Pokémon data comes from the Tyradexkit API.<br/>
 https://tyradex.vercel.app
